@@ -1,7 +1,55 @@
 <template>
-  <div>
+  <div id="slogan">
     <div class="text-center">
       <h1>Names Generator</h1>
+      <br/>
+      <h6 class="text-secondary">Gerador de nomes usando Vue.JS, GraphQL e NodeJS</h6>
+    </div>
+    <div id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <h5>Prefixos <span class="badge badge-info">0</span></h5>
+            <div class="card">
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    A
+                  </li>
+                  <li class="list-group-item">
+                    B
+                  </li>
+                  <li class="list-group-item">
+                    C
+                  </li>
+                </ul>
+                <br/>
+                <input type="text" class="form-control" placeholder="Digite o prefixo">
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <h5>Sufixos <span class="badge badge-info">0</span></h5>
+            <div class="card">
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    A
+                  </li>
+                  <li class="list-group-item">
+                    B
+                  </li>
+                  <li class="list-group-item">
+                    C
+                  </li>
+                </ul>
+                <br/>
+                <input type="text" class="form-control" placeholder="Digite o sufixo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -16,4 +64,13 @@ export default {
 </script>
 
 <style>
+#slogan {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#main {
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 </style>
