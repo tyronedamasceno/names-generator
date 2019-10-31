@@ -19,7 +19,7 @@
                 </ul>
                 <br/>
                 <div class="input-group">
-                  <input type="text" class="form-control" v-model="prefix" placeholder="Digite o prefixo">
+                  <input type="text" class="form-control" v-model="prefix" v-on:keyup.enter="addPrefix(prefix)" placeholder="Digite o prefixo">
                   <div class="input-group-append">
                     <button class="btn btn-info" v-on:click="addPrefix(prefix)">
                       <span class="fa fa-plus"></span>
@@ -40,7 +40,7 @@
                 </ul>
                 <br/>
                 <div class="input-group">
-                  <input type="text" class="form-control" v-model="sufix" placeholder="Digite o sufixo">
+                  <input type="text" class="form-control" v-model="sufix" v-on:keyup.enter="addSufix(sufix)" placeholder="Digite o sufixo">
                   <div class="input-group-append">
                     <button class="btn btn-info" v-on:click="addSufix(sufix)">
                       <span class="fa fa-plus"></span>
