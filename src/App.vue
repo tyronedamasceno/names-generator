@@ -54,8 +54,8 @@
 </template>
 
 <script>
-import "bootstrap/dist/css/bootstrap.css"
-import "font-awesome/css/font-awesome.css"
+import "bootstrap/dist/css/bootstrap.css";
+import "font-awesome/css/font-awesome.css";
 
 export default {
   name: "app",
@@ -66,7 +66,7 @@ export default {
       domains: ["AirHub", "AirStation", "AirMart", "JetHub", "JetStation", "JetMart", "FlightHub", "FlightStation", "FlightMart"]
     };
   }
-}
+};
 </script>
 
 <style>
