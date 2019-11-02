@@ -11,6 +11,15 @@ const typeDefs = `
     items (type: String): [Item]
   }
 
+  input ItemInput {
+    type: String
+    description: String
+  }
+
+  type Mutation {
+    saveItem (item: ItemInput): Item
+  }
+
 `;
 
 const items = [
@@ -26,6 +35,14 @@ const resolvers = {
   Query: {
     items(_, args) {
       return items.filter(item => item.type === args.type);
+    }
+  },
+  Mutation: {
+    saveItem(_, args) {
+      const item = args.item;
+      item.id = Math.floor(Math.random() * 10000);
+      items.push(item);
+      return item;
     }
   }
 }
